@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        UNIÃO FLASCO
+    </title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function salvar() {
+            let rua = document.getElementById("nome").value
+            //alert("Olá," + nome + "consta aqui que você é gay") 
+            //alert("Você caiu na pegadinha do Mario Games!")
+
+            document.getElementById("mensagem").innerHTML = "Você caiu na pegadinha do Mario Games!"
+            document.getElementById("mensagem").style.display = "block"
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container popup">
+        <div class="content">
+            <h2>
+                Olá
+            </h2>
+
+            <p>
+                Você caiu na pegadinha do Mario Games!
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="form-image">
+                <img src="img/E03IExeXsAIT5Sr.jpg" alt="">
+            </div>
+
+            <div class="form">
+                <form onsubmit="return ativarbtn()">
+                    <header>
+                        <div class="form-header">
+                            <div class="title">
+                                <h1>
+                                    Cadastro do Golpe
+                                </h1>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="name">
+                                Nome
+                            </label>
+
+                            <input id="name" type="text" name="name" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="cpf">
+                                CPF
+                            </label>
+
+                            <input id="cpf" type="number" name="number" placeholder="Digite seu cpf" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="number_creditcard">
+                                Número do Cartão
+                            </label>
+
+                            <input id="number_creditcard" type="number" name="number_creditcard"
+                                placeholder="Digite o número do cartão de crédito" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="date">
+                                Validade
+                            </label>
+
+                            <input id="date" type="date" name="date" placeholder="" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="cvv">
+                                CVV
+                            </label>
+
+                            <input id="cvv" type="number" name="cvv" placeholder="Digite o código do cartão" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="number">
+                                Celular
+                            </label>
+
+                            <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                        </div>
+                    </div>
+
+                    <div class="checkbox-inputs">
+                        <div class="checkbox-title">
+                            <h6>
+                                Você concorda em ser roubado com livre e espontânea vontade?
+                            </h6>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <div class="checkbox-input">
+                                <input type="checkbox" name="checkbox-confirmar" id="checkbox-confirmar">
+
+                                <label for="confirm">
+                                    Sim, me roube a vontade
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="togglebtn">
+                        <p>
+                            Ser roubado
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+        let togglebtn = document.querySelector(".togglebtn");
+
+        let container = document.querySelector(".container.popup");
+
+        togglebtn.onclick = function () {
+            container.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
